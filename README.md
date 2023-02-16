@@ -143,4 +143,8 @@ I would like to thank Microverse for letting me be a part of something as huge a
 
 This project is [MIT](./LICENSE) licensed.
 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+=======
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
