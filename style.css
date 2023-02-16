@@ -56,14 +56,14 @@
 
 .networks {
   text-decoration: none;
-  margin: 0px;
+  margin: none;
   color: #505f79;
   list-style-type: none;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   align-items: flex-start;
-  padding-top: 10px;
   padding: 24px;
+  padding-top: 10px;
   gap: 12px;
 }
 
