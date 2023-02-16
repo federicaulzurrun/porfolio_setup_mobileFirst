@@ -1,0 +1,52 @@
+.container-nav {
+  display: flex;
+  height: 92px;
+}
+
+.logo-name {
+  font-family: 'Poppins', sans-serif;
+  size: 18px;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #6070ff;
+}
+
+.navlog {
+  size: 20px;
+}
+
+.container {
+  background-image: url(/img/background.png);
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  color: #172b4d;
+}
+
+.intro {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.connect {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  size: 16px;
+  color: #7f8cff;
+}
+
+.networks {
+  text-decoration: none;
+  color: #505f79;
+  list-style-type: none;
+}
+
+.linkedin {
+  color: solid #505f79;
+}
