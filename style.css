@@ -15,7 +15,6 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #6070ff;
-  margin-left: 10px;
 }
 
 .navlog {
@@ -23,6 +22,7 @@ body {
   display: flex;
   justify-content: flex-end;
   margin-right: 10px;
+  margin-left: none;
 }
 
 .container {
