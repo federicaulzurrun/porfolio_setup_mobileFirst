@@ -85,3 +85,135 @@ body {
   padding: 24px;
   gap: 12px;
 }
+
+.page-development {
+  display: grid;
+  background-color: #e5e5e5;
+}
+
+.works {
+  background-color: #ffffff;
+  width: 327px;
+  height: 552px;
+  margin-top: 80px;
+  margin-left: 24px;
+  border: 1px #dfe1e6;
+  border-radius: 16px;
+}
+
+.snapshoot {
+  width: 295px;
+  height: 220px;
+  margin-top: 16px;
+  margin-left: 16px;
+  border-radius: 8px;
+}
+
+.left-block {
+  height: 288px;
+  width: 295px;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-text-block {
+  width: 295px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.project-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  font-style: bold;
+  color: #172b4d;
+}
+
+.frame-2 {
+  width: 236px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+}
+
+.client {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  text-align: left;
+  color: #344563;
+  font-weight: 600;
+  margin: 3px;
+  margin-left: 7px;
+}
+
+.counter {
+  size: 8px;
+  color: #c1c7d0;
+  width: 8px;
+  height: 8px;
+  margin: 3px;
+  margin-top: 8px;
+  align-items: center;
+}
+
+.client-role {
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  color: #7a869a;
+  text-align: left;
+  font-weight: 500;
+  margin: 3px;
+}
+
+.client-year {
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  color: #7a869a;
+  text-align: left;
+  font-weight: 500;
+  margin: 3px;
+}
+
+.primary-text {
+  width: 295px;
+  height: 76px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.tags-block {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  margin-right: 45px;
+  padding-inline-start: none;
+  align-items: center;
+  align-content: center;
+}
+
+.list-item {
+  text-decoration: none;
+}
+
+.btn-tags {
+  background-color: #ebebff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6070ff;
+}
+
+.normal-b {
+  border: 1px solid #396df2;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #396df2;
+  background-color: #ffffff;
+  margin-top: 15px;
+  margin-left: 5px;
+}
