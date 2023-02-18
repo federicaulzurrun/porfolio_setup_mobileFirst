@@ -21,26 +21,27 @@
 # 📖 [Hello Microverse] <a name="about-project"></a>
 
 
-**Porfolio** it's the beggining of the creation of my porfolio page. The tample it's copied from figma. I selected the firts of the five Microverse gave us to choose.
+**Porfolio** it's the beggining of the creation of my porfolio page. The main page it's almost completly done. The tample it's copied from figma. I selected the firts of the five Microverse gave us to choose.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-First i use HTML 5 thas it's markup languange used for structuring and presenting content on the WWW. Then i used CSS 3 that is used for structuring and styling web pages, especially flexbox.
+First i use HTML 5 thas it's markup languange used for structuring and presenting content on the WWW. Then i used CSS 3 that is used for structuring and styling web pages, especially flexbox and grid too.
 
 
 ### Key Features <a name="key-features"></a>
 
 - **NavBar** : contains the logo of my profolio anda the hamburguer menu that in a future will allow my clients to look for specific sections of the page.
-- **Presentation** : The main part of the page it's where i present myself and i let you know where to contact me
+- **Presentation** : The main part of the page it's where i present myself and i let you know where to contact me.
+- **Page Development** : Here you can see tha works that i'd already done and the languages that i use when i'm programing.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- https://federicaulzurrun.github.io/hellomicroverse/
+- https://federicaulzurrun.github.io/porfolio_setup_mobileFirst/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,10 +109,9 @@ Install this project linters: *do not change the any config file in any way*    
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Build the entire page** : adding projects that i've already done
+- **Build the contact me** : creating an interactive seccion for contacting me.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -121,7 +121,6 @@ Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 ## ⭐️ Show your support <a name="support"></a>
