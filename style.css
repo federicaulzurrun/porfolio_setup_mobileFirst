@@ -235,6 +235,25 @@ body {
   background-color: #fff;
   margin-top: 15px;
   margin-left: 5px;
+  border-radius: 8px;
+}
+
+.normal-b:hover {
+  box-shadow: #4053fc 24%;
+  border-radius: 8px;
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.normal-b:disabled {
+  background-color: #e5e5e5;
+  border-color: #c1c7d0;
+  color: #5e6c84;
+}
+
+.normal-b:active {
+  background-color: #2230d2;
+  color: #fff;
 }
 
 .about-myself {
