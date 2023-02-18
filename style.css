@@ -92,7 +92,7 @@ body {
 }
 
 .works {
-  background-color: #ffffff;
+  background-color: #fff;
   width: 327px;
   height: 552px;
   margin-top: 80px;
@@ -214,7 +214,6 @@ body {
   text-decoration: none;
   display: grid;
   transform: translateX(-35px);
-
 }
 
 .btn-tags {
@@ -233,7 +232,7 @@ body {
   font-weight: 500;
   font-size: 17px;
   color: #396df2;
-  background-color: #ffffff;
+  background-color: #fff;
   margin-top: 15px;
   margin-left: 5px;
 }
@@ -292,7 +291,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 20px;
-  color: #000000;
+  color: #000;
   margin-left: 30px;
 }
 
@@ -345,7 +344,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 20px;
-  color: #000000;
+  color: #000;
   width: 125px;
   margin-top: 24px;
   margin-left: 12px;
@@ -358,6 +357,6 @@ body {
   margin-left: 160px;
 }
 
-.list-line img{
+.list-line img {
   width: 320px;
 }
