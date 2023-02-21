@@ -379,3 +379,7 @@ body {
 .list-line img {
   width: 320px;
 }
+
+.contact-me {
+  background-image: url(img/Contact\ me.png);
+}
