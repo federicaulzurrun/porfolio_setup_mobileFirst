@@ -383,7 +383,7 @@ body {
 .contact-me {
   display: flex;
   flex-direction: column;
-  background-image: url(img/Contact\ me.png);
+  background-image: url(img/header-background-mobile-contact.png);
   background-repeat: no-repeat;
   top: 4420px;
   width: 375px;
@@ -400,9 +400,8 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-weight: 700;
-  align-content: center;
+  text-align: center;
   margin-top: 80px;
-  margin-left: 95px;
   color: #fff;
 }
 
@@ -412,9 +411,9 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 400;
-  align-content: center;
+  text-align: center;
   top: 4110px;
-  margin-left: 55px;
+  margin-left: 24px;
   margin-right: 24px;
   color: #ebebff;
 }
@@ -422,25 +421,29 @@ body {
 .Contact-form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 15px;
   width: 300px;
-  margin-top: 40px;
+  margin-top: 80px;
   margin-left: 40px;
   margin-right: 12px;
 }
 
 #name {
-  height: 24px;
+  height: 35px;
   right: 38px;
   left: 16px;
   top: 20px;
+  border: 1px #cfd8cf solid;
+  border-radius: 8px;
 }
 
 #email { 
-  height: 24px;
+  height: 35px;
   right: 38px;
   left: 16px;
   top: 50px;
+  border: 1px #cfd8cf solid;
+  border-radius: 8px;
 }
 
 #textarea {
@@ -448,4 +451,11 @@ body {
   right: 38px;
   left: 16px;
   top: 5px;
+  border: 1px #cfd8cf solid;
+  border-radius: 8px;
+}
+
+.contact-me-action {
+  margin-left: 35px;
+  margin-bottom: 40px;
 }
