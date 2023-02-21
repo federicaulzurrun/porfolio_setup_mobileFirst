@@ -381,5 +381,71 @@ body {
 }
 
 .contact-me {
+  display: flex;
+  flex-direction: column;
   background-image: url(img/Contact\ me.png);
+  background-repeat: no-repeat;
+  top: 4420px;
+  width: 375px;
+  height: auto;
+  margin: none;
+  margin-top: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-content: center;
+}
+
+.Contact-me-title {
+  height: 56px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  align-content: center;
+  margin-top: 80px;
+  margin-left: 95px;
+  color: #fff;
+}
+
+.Contact-me-body {
+  width: 327px;
+  height: 108px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  align-content: center;
+  top: 4110px;
+  margin-left: 55px;
+  margin-right: 24px;
+  color: #ebebff;
+}
+
+.Contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 300px;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 12px;
+}
+
+#name {
+  height: 24px;
+  right: 38px;
+  left: 16px;
+  top: 20px;
+}
+
+#email { 
+  height: 24px;
+  right: 38px;
+  left: 16px;
+  top: 50px;
+}
+
+#textarea {
+  height: 170px;
+  right: 38px;
+  left: 16px;
+  top: 5px;
 }
