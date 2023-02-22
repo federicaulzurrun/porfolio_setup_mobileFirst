@@ -169,12 +169,12 @@
         <p class="Contact-me-body">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it </p>
         <form class="Contact-form" action="https://formspree.io/f/mgebklpe
         " method="post">
-            <input type="text" id="name" name="name" placeholder="Write your name here!" required />
+            <input type="text" id="name" name="name" placeholder="Write your name here!" required maxlength="30" />
             <input type="email" id="email" name="email" placeholder="Write your e-mail here!" required />
-            <textarea name="user-massage" id="textarea" cols="30" rows="10" placeholder="Write something here" required></textarea>
+            <textarea name="user-massage" id="textarea" cols="30" rows="10" placeholder="Write something here" required maxlength="500"></textarea>
         </form>
         <div class="contact-me-action">
-            <button type="button" class="btn normal-b"> Get in touch </button>
+            <button type="submit" class="btn normal-b"> Get in touch </button>
         </div>
     </div>
 </body>
