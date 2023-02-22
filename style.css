@@ -457,7 +457,8 @@ body {
   border-radius: 8px;
 }
 
-.contact-me-action {
+#contact-me-action {
   margin-top: 15px;
   margin-bottom: 100px;
+  width: 130px;
 }
