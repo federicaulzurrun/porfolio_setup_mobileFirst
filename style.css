@@ -389,7 +389,7 @@ body {
   background-repeat: no-repeat;
   top: 4420px;
   width: 375px;
-  height: 800px;
+  height: 850px;
   margin: none;
   margin-top: 70px;
   background-size: cover;
@@ -427,6 +427,7 @@ body {
   margin-top: 70px;
   margin-left: 40px;
   margin-right: 12px;
+  height: 800px;
 }
 
 #name {
@@ -458,6 +459,5 @@ body {
 
 .contact-me-action {
   margin-top: 15px;
-  margin-left: 35px;
   margin-bottom: 100px;
 }
