@@ -18,7 +18,7 @@
 
 
 
-# 📖 [Hello Microverse] <a name="about-project"></a>
+# 📖 [Mi Porfolio] <a name="about-project"></a>
 
 
 **Porfolio** it's the beggining of the creation of my porfolio page. The main page it's almost completly done. The tample it's copied from figma. I selected the firts of the five Microverse gave us to choose.
@@ -41,7 +41,7 @@ First i use HTML 5 thas it's markup languange used for structuring and presentin
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- https://federicaulzurrun.github.io/porfolio_setup_mobileFirst/
+- <a href="https://federicaulzurrun.github.io/porfolio_setup_mobileFirst/"> Visit the site!</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,7 +109,7 @@ Install this project linters: *do not change the any config file in any way*    
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Build the contact me** : creating an interactive seccion for contacting me.
+- **-Making the page responsive** : making the web responsive for every type of screen.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

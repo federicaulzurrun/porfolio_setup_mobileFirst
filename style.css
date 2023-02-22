@@ -379,3 +379,86 @@ body {
 .list-line img {
   width: 320px;
 }
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  background-image: url(img/background.svg);
+  border-top-left-radius: 46px;
+  background-color: #6070ff;
+  background-repeat: no-repeat;
+  top: 4420px;
+  width: 375px;
+  height: 850px;
+  margin: none;
+  margin-top: 70px;
+  background-size: cover;
+  align-content: center;
+}
+
+.Contact-me-title {
+  height: 56px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 180px;
+  color: #fff;
+}
+
+.Contact-me-body {
+  width: 327px;
+  height: 108px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  top: 4110px;
+  margin-left: 24px;
+  margin-right: 24px;
+  color: #ebebff;
+}
+
+.Contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  margin-top: 70px;
+  margin-left: 40px;
+  margin-right: 12px;
+  height: 800px;
+}
+
+#name {
+  height: 35px;
+  right: 38px;
+  left: 16px;
+  top: 20px;
+  border: 1px #cfd8cf solid;
+  border-radius: 8px;
+}
+
+#email {
+  height: 35px;
+  right: 38px;
+  left: 16px;
+  top: 50px;
+  border: 1px #cfd8cf solid;
+  border-radius: 8px;
+}
+
+#textarea {
+  height: 170px;
+  right: 38px;
+  left: 16px;
+  top: 5px;
+  border: 1px #cfd8cf solid;
+  border-radius: 8px;
+}
+
+#contact-me-action {
+  margin-top: 15px;
+  margin-bottom: 100px;
+  width: 130px;
+}
