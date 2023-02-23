@@ -2,6 +2,8 @@ body {
   margin: none;
 }
 
+/*Header container*/
+
 .container-nav {
   display: flex;
   height: auto;
@@ -15,6 +17,7 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #6070ff;
+  padding-right: 10px;
 }
 
 .navlog {
@@ -24,6 +27,8 @@ body {
   margin-right: 10px;
   margin-left: none;
 }
+
+/*Main section*/
 
 .container {
   background-image: url(img/background2.png);
@@ -85,6 +90,8 @@ body {
   padding: 24px;
   gap: 12px;
 }
+
+/*Page-development section*/
 
 .page-development {
   display: grid;
@@ -255,6 +262,8 @@ body {
   background-color: #2230d2;
   color: #fff;
 }
+
+/*About myself section*/
 
 .about-myself {
   background-image: url(img/BaseAboutMySelf.png);
@@ -461,4 +470,215 @@ body {
   margin-top: 15px;
   margin-bottom: 100px;
   width: 130px;
+}
+
+@media only screen and (min-width: 750px) {
+
+/*header section*/
+
+.logo-name {
+  padding-left: 110px;
+}
+
+  /*main section*/
+
+.container {
+  display: flex;
+  background-image: url(img/Header\ bg@2x.jpg);
+  border-bottom-left-radius: 66px;
+  margin: none;
+  border-top: 60px;
+  background-repeat: no-repeat;
+  background-size: 101%;
+  width: 100%;
+  height: auto;
+}
+
+.container-main {
+  padding-top: 70px;
+  padding-left: 100px;
+  width: auto;
+}
+
+.title {
+  padding-right: 380px;
+  font-size: 45px;
+  line-height: 50px;
+}
+
+.intro {
+  margin-right: 120px;
+  line-height: 23px;
+  font-size: 17px;
+  margin-bottom: none;
+}
+
+.networks {
+  margin-top: 3px;
+  padding-left: 26px;
+  padding-top: 2px;
+}
+
+/*page-development section*/
+
+.page-development {
+  display:flex;
+  flex-direction: column;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 1156px;
+  height: 496px;
+  margin-top: 120px;
+  margin-left: 142px;
+  border-radius: 24px;
+}
+
+.snapshoot {
+  margin: 24px;
+  width: 544px;
+  height: 448px;
+}
+
+.left-block {
+  width: 544px;
+  height: 465px;
+  margin-top: 24px;
+  margin-left: 22px;
+  margin-right: 22px;
+  margin-bottom: 27px;
+}
+
+.primary-text-block {
+  width: 496px;
+  height: 96px;
+  margin-top: 24px;
+  margin-left: 24px;
+}
+
+.project-title {
+  font-size: 40px;
+}
+
+.frame-2 {
+  width: 297px;
+  height: 40px;
+  margin-right: 190px;
+}
+
+.client {
+  font-size: 18px;
+  margin-right: 9px;
+}
+
+.client-role {
+  font-size: 18px;
+  width: auto;
+  font-weight: 400;
+}
+
+.client-year {
+  font-size: 18px;
+  margin-right: 1px;
+  font-weight: 400;
+}
+
+.counter {
+  margin-top: 13px;
+}
+
+.primary-text {
+  width: 496px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 24px;
+  padding-left: 5px;
+}
+
+.tags-block {
+  width: 243px;
+  height: 24px;
+  margin-top: 16px;
+  margin-left: 24px;
+  margin-right: 287px;
+  padding-left: 35px;
+}
+
+.btn-tags {
+  border-radius: 8px;
+  height: 24px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+}
+
+.action {
+  margin-left: 24px;
+  margin-bottom: 140px;
+}
+
+.multipost-uno {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+/*About myself section*/
+
+.about-myself {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 1440px;
+}
+
+.left-block-about {
+  width: 447px;
+  height: 392px;
+  margin-top: 142px;
+  margin-left: 142px;
+  margin-bottom: 142px;
+  margin-right: 25px;
+}
+
+.title-about-myself {
+  width: 447px;
+  height: 114px;
+  margin-top: 1px;
+  margin-left: 1px;
+  padding-right: 310px;
+  font-size: 40px;
+}
+
+.intro-about {
+  margin: 1px;
+  font-size: 16px;
+}
+
+.connect-about{
+  margin-left: 1px;
+  margin-top: 24px;
+}
+
+.networks-about {
+  margin-left: 1px;
+  padding-left: 1px;
+}
+
+.about-action {
+  transform: translateX(-10px);
+  margin-left: 1px;
+  padding-left: 1px;
+}
+
+.languages {
+  width: 684px;
+  height: 360px;
+  margin-top: 142px;
+  margin-left: 25px;
+  margin-bottom: 142px;
+  margin-right: 142px;
+}
+
 }
