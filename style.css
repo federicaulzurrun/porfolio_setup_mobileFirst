@@ -1,5 +1,8 @@
 body {
   margin: none;
+  background-color: #f7f7f9;
+  width: 100%;
+  height: auto;
 }
 
 /* Header-container */
@@ -19,7 +22,7 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #6070ff;
-  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .navlog {
@@ -38,17 +41,29 @@ body {
 /* Main-section */
 
 .container {
-  background-image: url(img/background2.png);
-  width: auto;
+  width: 100%;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.container-img {
+  background-image: url(img/bacground-header-mobile.svg);
+  background-color: #fff;
+  width: 100%;
   height: auto;
-  margin: none;
+  margin-right: 1px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  border-bottom-left-radius: 28px;
+  display: flex;
+  align-items: center;
 }
 
 .container-main {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .title {
@@ -73,6 +88,7 @@ body {
 }
 
 .connect {
+  align-self: flex-start;
   font-family: 'Poppins', sans-serif;
   font-weight: bolder;
   text-transform: uppercase;
@@ -85,6 +101,7 @@ body {
 }
 
 .networks {
+  align-self: flex-start;
   text-decoration: none;
   margin: none;
   margin-bottom: 120px;
@@ -100,7 +117,9 @@ body {
 /* Page-development-section */
 
 .page-development {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #f7f7f9;
   background-repeat: no-repeat;
   background-size: auto;
@@ -108,11 +127,11 @@ body {
 }
 
 .works {
+  align-items: center;
   background-color: #fff;
   width: 327px;
   height: 552px;
   margin-top: 80px;
-  margin-left: 14px;
   border: 1px #dfe1e6;
   border-radius: 16px;
 }
@@ -297,7 +316,7 @@ body {
 .about-myself {
   background-image: url(img/BaseAboutMySelf.png);
   width: auto;
-  height: auto;
+  height: 1150px;
   margin: none;
   margin-top: 70px;
   background-repeat: no-repeat;
@@ -339,9 +358,16 @@ body {
 }
 
 .languages {
-  width: 327px;
+  width: 100%;
   height: auto;
   display: grid;
+}
+
+.languages-cont {
+  display: grid;
+  grid-template-columns: 88% 10%;
+  width: 100%;
+  height: auto;
 }
 
 .languages-title {
@@ -353,7 +379,8 @@ body {
 }
 
 .fa-chevron-down {
-  display: none;
+  display: inline;
+  color: #acb7c3;
 }
 
 .about-list {
@@ -363,10 +390,11 @@ body {
   display: flex;
   flex-direction: column;
   padding: none;
+  width: 90%;
 }
 
 .about-list-part-one {
-  width: 303px;
+  width: 100%;
   height: 67px;
   margin-top: 12px;
   margin-right: 12px;
@@ -395,10 +423,10 @@ body {
 }
 
 .about-list-part-two {
-  width: 327px;
+  width: 100%;
   height: 72px;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 88% 10%;
 }
 
 .list-content {
@@ -415,14 +443,14 @@ body {
   color: #acb7c3;
   size: 20px;
   margin-top: 33px;
-  margin-left: 160px;
 }
 
 .list-line img {
-  width: 320px;
+  width: 100%;
 }
 
 .contact-me {
+  transform: translateY(-30px);
   display: flex;
   flex-direction: column;
   background-image: url(img/background.svg);
@@ -430,12 +458,20 @@ body {
   background-color: #6070ff;
   background-repeat: no-repeat;
   top: 4420px;
-  width: 375px;
-  height: 850px;
+  width: 100%;
+  height: auto;
   margin: none;
-  margin-top: 70px;
   background-size: cover;
   align-content: center;
+  align-items: center;
+}
+
+.contact-me-div {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Contact-me-title {
@@ -449,15 +485,13 @@ body {
 }
 
 .Contact-me-body {
-  width: 327px;
+  width: 100%;
   height: 108px;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 400;
   text-align: center;
   top: 4110px;
-  margin-left: 24px;
-  margin-right: 24px;
   color: #ebebff;
 }
 
@@ -465,11 +499,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 300px;
+  width: 100%;
   margin-top: 70px;
-  margin-left: 40px;
-  margin-right: 12px;
-  height: 800px;
+  height: auto;
 }
 
 #name {
@@ -505,10 +537,58 @@ body {
   width: 130px;
 }
 
+@media only screen and (min-width: 576px) {
+
+  .container {
+    width: 100%;
+    background-color: #fff;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin: 1px;
+    border-bottom-left-radius: 168px;
+  }
+
+  .container-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 37em;
+    height: auto;
+    background-color: #fff;
+    background-image: url(img/background-main-desk.svg);
+    background-repeat: no-repeat;
+    border-top: 20px #fff solid;
+    background-size: 100%;
+  }
+
+  .container-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-left: 36px;
+  }
+
+  .contact-me {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contact-me-div {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin-left: 100px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .container-nav {
-    justify-content: space-around;
-    width: 1438px;
+    grid-template-columns: 40% 20%;
+    width: auto;
     padding-top: 10px;
   }
 
@@ -522,37 +602,32 @@ body {
 
   .nav-desk {
     display: flex;
+    align-items: flex-start;
     justify-content: space-evenly;
     list-style: none;
     text-decoration: none;
-    gap: 20px;
-    width: 250px;
+    gap: 10px;
+    width: 100%;
     padding-left: 1px;
   }
 
   .page-parts {
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 500;
     color: #344563;
     text-transform: capitalize;
-    transform: translateX(100px);
   }
 
   /* main-section */
 
   .container {
-    width: 1440px;
-    margin-top: 1px;
-    margin-left: 1px;
-    margin-right: 1px;
-    padding: 1px;
-    padding-left: 0.001px;
-    background-color: #f7f7f9;
+    width: 100%;
+    background-color: #fff;
   }
 
   .container-img {
-    width: 1397.4px;
+    width: 100%;
     height: 821.46px;
     background-color: #fff;
     border-bottom-left-radius: 270px;
@@ -560,15 +635,14 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
+    flex-direction: row;
     border-top: 60px #fff solid;
   }
 
   .container-main {
-    width: 920px;
+    width: auto;
     height: auto;
-    margin-top: 130px;
-    margin-left: 330px;
-    margin-right: 260px;
+    align-items: center;
   }
 
   .title {
@@ -599,12 +673,12 @@ body {
   }
 
   .works {
+    align-items: center;
     display: grid;
     grid-template-columns: 50% 50%;
-    width: 1156px;
+    width: 90%;
     height: 496px;
     margin-top: 120px;
-    margin-left: 142px;
     border-radius: 24px;
   }
 
@@ -616,7 +690,7 @@ body {
     display: inline;
     background-image: url(img/Snapshoot-desktop.png);
     margin: 24px;
-    width: 544px;
+    width: 100%;
     height: 448px;
   }
 
@@ -624,7 +698,7 @@ body {
     display: inline;
     background-image: url(img/photo-two.png);
     margin: 24px;
-    width: 544px;
+    width: 100%;
     height: 448px;
   }
 
@@ -632,7 +706,7 @@ body {
     display: inline;
     background-image: url(img/photo-three.png);
     margin: 24px;
-    width: 544px;
+    width: 100%;
     height: 448px;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -649,7 +723,7 @@ body {
   }
 
   .left-block {
-    width: 544px;
+    width: 100%;
     height: 465px;
     margin-top: 24px;
     margin-left: 22px;
@@ -658,7 +732,7 @@ body {
   }
 
   .primary-text-block {
-    width: 496px;
+    width: 100%;
     height: 96px;
     margin-top: 24px;
     margin-left: 24px;
@@ -682,7 +756,7 @@ body {
   }
 
   .frame-2 {
-    width: 297px;
+    width: 100%;
     height: 40px;
     margin-right: 160px;
   }
@@ -709,7 +783,7 @@ body {
   }
 
   .primary-text {
-    width: 496px;
+    width: 100%;
     height: 50px;
     font-size: 16px;
     line-height: 24px;
@@ -748,22 +822,19 @@ body {
 
   .about-myself {
     display: grid;
-    grid-template-columns: 40% 60%;
-    width: 1440px;
-    height: auto;
+    grid-template-columns: 45% 50%;
+    width: 100%;
+    height: 900px;
   }
 
   .left-block-about {
-    width: 447px;
+    width: 90%;
     height: 392px;
-    margin-top: 142px;
-    margin-left: 142px;
-    margin-bottom: 142px;
     margin-right: 25px;
   }
 
   .title-about-myself {
-    width: 447px;
+    width: 100%;
     height: 114px;
     margin-top: 1px;
     margin-left: 1px;
@@ -793,26 +864,22 @@ body {
   }
 
   .languages {
-    width: 684px;
+    width: 100%;
     height: 360px;
     margin-top: 142px;
     margin-left: 25px;
-    margin-bottom: 142px;
-    margin-right: 142px;
   }
 
   .languages-cont {
-    display: flex;
-    flex-direction: row;
-    width: 684px;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    width: 100%;
     height: 72px;
   }
 
   .languages-title {
-    width: 582px;
+    width: 100%;
     height: 24px;
-    margin: 24px;
-    margin-right: 20px;
     font-size: 20px;
   }
 
@@ -820,12 +887,10 @@ body {
     display: inline;
     color: #acb7c3;
     size: 60px;
-    margin-top: 24px;
-    margin-left: 10px;
   }
 
   .about-list {
-    width: 414px;
+    width: 100%;
     height: 144px;
     flex-direction: row;
     margin-left: none;
@@ -853,17 +918,17 @@ body {
   }
 
   .about-list-two {
-    width: 684px;
+    width: 100%;
     height: 150px;
   }
 
   .about-list-part-two {
-    width: 684px;
+    width: 100%;
     height: 72px;
   }
 
   .list-content {
-    width: 582px;
+    width: 100%;
     height: 24px;
     margin: 24px;
     margin-right: 1px;
@@ -877,7 +942,7 @@ body {
   }
 
   .list-line img {
-    width: 684px;
+    width: 100%;
     height: 3px;
   }
 
@@ -885,7 +950,7 @@ body {
 
   .contact-me {
     position: absolute;
-    width: 1440px;
+    width: 100%;
     background-color: #6070ff;
     border-top-left-radius: 270px;
     background-image: url(img/background-contact-desk.svg);
@@ -898,16 +963,12 @@ body {
   }
 
   .contact-me-div {
-    width: 801px;
+    width: 90%;
     height: 557px;
-    margin-top: 142px;
-    margin-left: 245px;
-    margin-bottom: 127px;
-    margin-right: 319px;
   }
 
   .Contact-me-title {
-    width: 801px;
+    width: 100%;
     height: 56px;
     align-items: center;
     margin: 1px;
@@ -917,22 +978,17 @@ body {
   }
 
   .Contact-me-body {
-    width: 569px;
+    width: 100%;
     height: 102px;
-    margin-left: 116px;
-    margin-top: 12px;
-    margin-right: 116px;
     font-size: 20px;
     line-height: 28px;
   }
 
   .Contact-form {
-    width: 447px;
+    width: 80%;
     height: auto;
-    margin-left: 177px;
-    margin-top: 12px;
-    margin-right: 177px;
     gap: 12px;
+    margin: 1px;
   }
 
   #contact-me-action {
