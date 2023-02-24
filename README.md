@@ -100,7 +100,7 @@ Install this project linters: *do not change the any config file in any way*    
 
 👤 **Federica Ulzurrun**
 
-- GitHub: [@federicaulzurrun] (https://github.com/federicaulzurrun)
+- GitHub: [@federicaulzurrun](https://github.com/federicaulzurrun)
 - Twitter: [@ulzurrunfede](https://mobile.twitter.com/ulzurrunfede)
 - LinkedIn: [Federica Ulzurrun](https://www.linkedin.com/in/federica-ulzurrun-293a86198)
 
@@ -109,7 +109,7 @@ Install this project linters: *do not change the any config file in any way*    
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **-Making the page responsive** : making the web responsive for every type of screen.
+- **-Making the page  more responsive** : Adding more than 1 breaking point.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
