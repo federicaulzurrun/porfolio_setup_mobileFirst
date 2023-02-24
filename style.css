@@ -23,6 +23,13 @@ body {
   text-decoration: none;
   color: #6070ff;
   padding-left: 10px;
+  animation-name: title-an;
+  animation-duration: 3s;
+}
+
+@keyframes title-an {
+  from {font-size: 18px;}
+  to {font-size: 22px;}
 }
 
 .navlog {
@@ -617,6 +624,10 @@ body {
     font-weight: 500;
     color: #344563;
     text-transform: capitalize;
+  }
+
+  .page-parts:hover {
+    background-color: #4053fc;
   }
 
   /* main-section */
