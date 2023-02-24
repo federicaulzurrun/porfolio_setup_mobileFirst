@@ -5,7 +5,6 @@ body {
 /* Header-container */
 
 .container-nav {
-  position: fixed;
   display: grid;
   grid-template-columns: 50% 50%;
   height: auto;
@@ -102,7 +101,7 @@ body {
 
 .page-development {
   display: grid;
-  background-color: #e5e5e5;
+  background-color: #f7f7f9;
   background-repeat: no-repeat;
   background-size: auto;
   width: auto;
@@ -510,6 +509,7 @@ body {
   .container-nav {
     justify-content: space-around;
     width: 1438px;
+    padding-top: 10px;
   }
 
   .logo-name {
@@ -548,7 +548,7 @@ body {
     margin-right: 1px;
     padding: 1px;
     padding-left: 0.001px;
-    background-color: #e5e5e5;
+    background-color: #f7f7f9;
   }
 
   .container-img {
@@ -560,8 +560,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
-    margin-top: 5px;
-    border-top: 80px #fff solid;
+    border-top: 60px #fff solid;
   }
 
   .container-main {
@@ -589,6 +588,7 @@ body {
     margin-top: 3px;
     padding-left: 26px;
     padding-top: 2px;
+    gap: 25px;
   }
 
   /* page-development section */
@@ -684,7 +684,7 @@ body {
   .frame-2 {
     width: 297px;
     height: 40px;
-    margin-right: 190px;
+    margin-right: 160px;
   }
 
   .client {
