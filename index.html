@@ -29,19 +29,21 @@
     </header>
     <div class="container">
         <div class="container-img">
-            <main class="container-main">
-            <h1 class="title">I'm Federica Glad to see you! </h1>
-            <!--The content on the p tag is copy from the tamplate that i choose in figma-->
-            <p class="intro">I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
-            <h6 class="connect">let's connect</h6>
-            <ul class="networks">
-                <li><a href=""><img src="img/Twitter.png" alt="20px"></a></li>
-                <li ><a href=""><img src="img/Linkedin icon.png" alt=""></a></li>
-                <li><a href=""><img src="img/M.png" alt="20px"></a></li>
-                <li><a href=""><img src="img/GitHub.png" alt="20px"></a></li>
-                <li><a href=""><img src="img/Peace.png" alt="20px"></a></li>
-            </ul>
-            </main>
+            <div class="container-content">
+                <main class="container-main">
+                <h1 class="title">I'm Federica Glad to see you! </h1>
+                <!--The content on the p tag is copy from the tamplate that i choose in figma-->
+                <p class="intro">I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
+                <h6 class="connect">let's connect</h6>
+                <ul class="networks">
+                    <li><a href=""><img src="img/Twitter.png" alt="20px"></a></li>
+                    <li ><a href=""><img src="img/Linkedin icon.png" alt=""></a></li>
+                    <li><a href=""><img src="img/M.png" alt="20px"></a></li>
+                    <li><a href=""><img src="img/GitHub.png" alt="20px"></a></li>
+                    <li><a href=""><img src="img/Peace.png" alt="20px"></a></li>
+                </ul>
+                </main>
+            </div>
         </div>
     </div>
     <section class="page-development">
@@ -87,7 +89,7 @@
                     </div>
                 </div>
                 <p class= "primary-text multi">A daily selection of privately personalized reads; no accounts or sign-ups required</p>
-                <ul class="tags-block">
+                <ul class="tags-block multi-tags">
                     <li class="list-item"><button type="button" class= "btn btn-tags"> html</button></li>
                     <li class="list-item"><button type="button" class= "btn btn-tags"> css</button></li>
                     <li class="list-item"><button type="button" class=" btn btn-tags"> javaScript</button></li>
@@ -123,10 +125,12 @@
                 </div>
             </div>
         </div>
-        <div class="works multipost-uno">
-            <img src="img/SnapshootPortfolio4.png" class="snapshoot">
-            <div class="photo-four"></div>
-            <div class="left-block">
+        <div class="works multipost-uno multi-dos">
+            <div class="multi-dos">
+                <img src="img/SnapshootPortfolio4.png" class="snapshoot">
+                <div class="photo-four"></div>
+            </div>
+            <div class="left-block multi-block">
                 <div class="primary-text-block">
                     <h2 class="project-title multipost">Multi-Post Stories</h2>
                     <h2 class="project-title-desktop">uber navigation</h2>
@@ -186,15 +190,17 @@
     </section>
     <div class= "contact-me">
         <div class="contact-me-div">
-            <h2 class="Contact-me-title">Contact me</h2>
-            <p class="Contact-me-body">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it </p>
-            <form class="Contact-form" action="https://formspree.io/f/mgebklpe
-            " method="post">
-                <input type="text" id="name" name="name" placeholder="Write your name here!" required maxlength="30" />
-                <input type="email" id="email" name="email" placeholder="Write your e-mail here!" required />
-                <textarea name="user-massage" id="textarea" cols="30" rows="10" placeholder="Write something here" required maxlength="500"></textarea>
-                <button type="submit" class="btn normal-b" id="contact-me-action"> Get in touch </button>
-            </form>
+            <div class="contact-me-content">
+                <h2 class="Contact-me-title">Contact me</h2>
+                <p class="Contact-me-body">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it </p>
+                <form class="Contact-form" action="https://formspree.io/f/mgebklpe
+                " method="post">
+                    <input type="text" id="name" name="name" placeholder="Write your name here!" required maxlength="30" />
+                    <input type="email" id="email" name="email" placeholder="Write your e-mail here!" required />
+                    <textarea name="user-massage" id="textarea" cols="30" rows="10" placeholder="Write something here" required maxlength="500"></textarea>
+                    <button type="submit" class="btn normal-b" id="contact-me-action"> Get in touch </button>
+                </form>
+            </div>
         </div>
     </div>
 </body>
