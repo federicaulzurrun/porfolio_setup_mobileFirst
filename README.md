@@ -18,7 +18,7 @@
 
 
 
-# 📖 [Mi Porfolio] <a name="about-project"></a>
+# 📖 [My Porfolio] <a name="about-project"></a>
 
 
 **Porfolio** it's the beggining of the creation of my porfolio page. The main page it's almost completly done. The tample it's copied from figma. I selected the firts of the five Microverse gave us to choose.
@@ -29,6 +29,8 @@
 
 First i use HTML 5 thas it's markup languange used for structuring and presenting content on the WWW. Then i used CSS 3 that is used for structuring and styling web pages, especially flexbox and grid too.
 
+
+### <a name="walkthrough" href= "https://www.loom.com/share/4f8856c359c5475ebfaa59a578711397">Project Walkthrough</a>
 
 ### Key Features <a name="key-features"></a>
 
