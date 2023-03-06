@@ -53,16 +53,16 @@ body {
   background-color: #6070ff;
 }
 
-.nav-log.active .bar:nth-child(2){
+.nav-log.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.nav-log.active .bar:nth-child(1){
+.nav-log.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
   background-color: white;
 }
 
-.nav-log.active .bar:nth-child(3){
+.nav-log.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
   background-color: white;
 }
@@ -99,7 +99,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 32px;
-  line-height: 44px;;
+  line-height: 44px;
   text-transform: capitalize;
   margin-left: 28px;
 }
