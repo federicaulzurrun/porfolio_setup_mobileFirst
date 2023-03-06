@@ -17,14 +17,16 @@
     <header>
         <nav class="container-nav">
             <a href="#" class="logo-name">Federica Ulzurrun</a>
-            <div class="navlog">
-                <img src="img/navhamburger.png" alt="20px">
-            </div>
-            <ul class="nav-desk">
-                <li class="page-parts">portfolio</li>
-                <li class="page-parts">about</li>
-                <li class="page-parts">contact</li>
+            <ul class="nav-menu">
+                <li class="page-parts"><a class="nav-link" href="#portfolio">portfolio</a></li>
+                <li class="page-parts"><a href="#about" class="nav-link">about</a></li>
+                <li class="page-parts"><a href="#cont" class="nav-link">contact</a></li>
             </ul>
+            <div class="nav-log">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
     <div class="container-img">
@@ -44,7 +46,7 @@
             </main>
         </div>
     </div>
-    <section class="page-development">
+    <section class="page-development" id="portfolio">
         <div class="works">
             <img src="img/Snapshoot Portfolio.png" class="snapshoot">
             <div class="photo-one"></div>
@@ -151,7 +153,7 @@
                 </div>
             </div>
         </div>
-        <div class="about-myself">
+        <div class="about-myself" id="about">
             <div class="left-block-about">
                 <h2 class= "title-about-myself">About myself</h2>
                 <p class="intro-about intro">I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
@@ -186,7 +188,7 @@
             </div>
         </div>
     </section>
-    <div class= "contact-me">
+    <div class= "contact-me" id="cont">
         <div class="contact-me-div">
             <div class="contact-me-content">
                 <h2 class="Contact-me-title">Contact me</h2>
@@ -201,5 +203,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
