@@ -1240,7 +1240,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1060px) and (max-width: 1290px) {
+@media only screen and (min-width: 1060px) and (max-width: 1440px) {
   .container-nav {
     grid-template-columns: 40% 20%;
     width: 100%;
@@ -1248,31 +1248,45 @@ body {
   }
 
   .logo-name {
-    padding-left: 140px;
+    padding-left: 5%;
   }
 
-  .navlog {
+  .nav-log {
     display: none;
   }
 
-  .nav-desk {
+  .nav-menu {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    flex-direction: row;
     list-style: none;
+    position: initial;
+    background-color: #fff;
     text-decoration: none;
-    gap: 15px;
-    width: 100%;
-    padding-left: 150px;
+    backdrop-filter: none;
+    opacity: 100%;
+    gap: 0;
+    width: 50%;
     padding-top: 5px;
+    height: auto;
+    align-self: flex-end;
+    text-align: right;
   }
 
   .page-parts {
+    text-transform: capitalize;
+    align-self: flex-end;
+    margin: 0 1px;
+  }
+
+  .nav-link {
+    height: fit-content;
+    width: 50%;
+    margin: 0 1px;
     font-family: 'Poppins', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     color: #344563;
-    text-transform: capitalize;
+    transition: none;
   }
 
   /* main-section */
