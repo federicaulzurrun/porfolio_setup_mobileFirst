@@ -18,29 +18,35 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 
 /* validationForm */
 
-const email = document.getElementById('email');
-
 const setError = (element, message) => {
   const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('.error');
+  const errorDisplay = document.querySelector('.error');
 
   errorDisplay.innerText = message;
   inputControl.classList.add('error');
   inputControl.classList.remove('success');
 };
 
+const checkLowerCase = (str) => {
+  const check = str.toString().toLowerCase();
+  if (str === check) {
+    return true;
+  }
+  return false;
+};
+
 const validateInputs = (e) => {
   e.preventDefault();
-  const emailValue = email.value;
   const form = document.getElementById('form');
-
-  if (emailValue === emailValue.toUpperCase()) {
-    setError(email, 'Email should be written in lower case');
-  } else {
-    form.action = ('https://formspree.io/f/mgebklpe');
+  const email = document.getElementById('email').value;
+  const emailChecker = checkLowerCase(email);
+  if (emailChecker) {
+    form.action = 'https://formspree.io/f/mgebklpe';
     form.submit();
+  } else {
+    setError(email, 'Email should be written in lower case');
   }
 };
 
 const form = document.getElementById('form');
-form.addEventListener('click', validateInputs);
+form.addEventListener('submit', validateInputs);
