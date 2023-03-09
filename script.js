@@ -1,5 +1,3 @@
-/* eslint linebreak-style: ["error", "windows"] */
-
 const hamburger = document.querySelector('.nav-log');
 const navMenu = document.querySelector('.nav-menu');
 const containerMain = document.querySelector('.container-main');
