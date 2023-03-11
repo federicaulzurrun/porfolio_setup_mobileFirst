@@ -1,5 +1,3 @@
-/* eslint linebreak-style: ["error", "windows"] */
-
 const hamburger = document.querySelector('.nav-log');
 const navMenu = document.querySelector('.nav-menu');
 const containerMain = document.querySelector('.container-main');
@@ -22,9 +20,18 @@ const projectInfo = [
   {
     id: 0,
     name: 'Tonic',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
-    image: './img/Snapshoot Portfolio.png',
-    technologies: ['html', 'css', 'javascript'],
+    nameDesk: 'Tonic',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    image: './img/SnapshootPortfolio.png',
+    technologies: {
+      tech1: 'HTML',
+      tech2: 'CSS',
+      tech3: 'JavaScript',
+      tech4: 'GitHub',
+      tech5: 'Ruby',
+      tech6: 'Bootstrap',
+    },
+    counter: './img/Counter.png',
     role: 'Back and dev',
     company: 'canopy',
     year: 2015,
@@ -34,9 +41,18 @@ const projectInfo = [
   {
     id: 1,
     name: 'Multi-post stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
-    image: './img/SnapshootPortfolio2.png',
-    technologies: ['html', 'css', 'javascript'],
+    nameDesk: 'Multi-post stories',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    image: 'img/SnapshootPortfolio2.png',
+    technologies: {
+      tech1: 'HTML',
+      tech2: 'CSS',
+      tech3: 'JavaScript',
+      tech4: 'GitHub',
+      tech5: 'Ruby',
+      tech6: 'Bootstrap',
+    },
+    counter: './img/Counter.png',
     role: 'Back and dev',
     company: 'canopy',
     year: 2015,
@@ -46,9 +62,18 @@ const projectInfo = [
   {
     id: 2,
     name: 'Tonic',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
+    nameDesk: 'Facebook 360',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: './img/SnapshootPortfolio3.png',
-    technologies: ['html', 'css', 'javascript'],
+    technologies: {
+      tech1: 'HTML',
+      tech2: 'CSS',
+      tech3: 'JavaScript',
+      tech4: 'GitHub',
+      tech5: 'Ruby',
+      tech6: 'Bootstrap',
+    },
+    counter: './img/Counter.png',
     role: 'Back and dev',
     company: 'canopy',
     year: 2015,
@@ -58,9 +83,18 @@ const projectInfo = [
   {
     id: 3,
     name: 'Multi-post stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
+    nameDesk: 'Uber Navigation',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: './img/SnapshootPortfolio4.png',
-    technologies: ['html', 'css', 'javascript'],
+    technologies: {
+      tech1: 'HTML',
+      tech2: 'CSS',
+      tech3: 'JavaScript',
+      tech4: 'GitHub',
+      tech5: 'Ruby',
+      tech6: 'Bootstrap',
+    },
+    counter: './img/Counter.png',
     role: 'Back and dev',
     company: 'canopy',
     year: 2015,
@@ -68,119 +102,94 @@ const projectInfo = [
     demoLink: '#',
   },
 ];
+const firstCardContainer = document.getElementById('card-container-one');
 
-// PopUp Window
-const onMediaQueryModal = (width) => {
-  if (window.matchMedia('(min-width: 767px)').matches) {
-    return true;
-  }
-  return false;
-};
-
-const onMediaQueryModalMobile = (width) => {
-  if (window.matchMedia('(max-width: 767px)').matches) {
-    return true;
-  }
-  return false;
-};
-
-const onProjectButtonClick = (idProject, event) => {
-  const modalTemplateMobile = document.getElementById('modal-template-mobile');
-  const modalTemplateWeb = document.getElementById('modal-template-web');
-
-  if ((onMediaQueryModal(event.screenX)) === true) {
-    effectsOnModalWeb();
-  }
-  if ((onMediaQueryModalMobile(event.screenX)) === true) {
-    effectsOnMobile();
-  }
-
-  const detail = projectDetailList.find((detail) => projectInfo.id === idProject);
-
-  const arrayString = [];
-  for (let el = 0; el < detail.technologies.length; el++) {
-    const ListTech = `<li class="list-item col"><button type="button" class= "btn btn-tags">${projectInfo.technologies[el]}</button></li>`;
-    arrayString.push(ListTech);
-  }
-  const projectString = arrayString.join('');
-
-  // dynamic template for mobile
-  const detailHtmlMobile = `
-
-  <div class="d-flex bg-black h-100 w-100">
-    <div class="d-flex flex-column justify-content-center m-5 pt-1 pb-4 px-3 row-gap-3 border rounded-3 border-primary" id="modal-heading-${projectInfo.id}">
-      <div class="primary-text-block mx-2 d-flex flex-row">
-        <h2 class="project-title pt-3 fs-1">${projectInfo.name}</h2>
-        <div class="w-25">
-          <button class="btn" onclick="MobileModaleClose()"><img src="./img/btncancelpopup.svg" alt=""></button>
+const renderCards = (projectInfo, containerName) => {
+  projectInfo.forEach((cards) => {
+    const card = document.createElement('div');
+    card.classList = 'popup';
+    card.id = `popup${cards.id}`;
+    card.innerHTML = `
+    <div class="d-flex flex-column justify-content-center 
+    py-1 px-3 row-gap-3 pop-conteiner-devp" id="modal-heading-${cards.id}">
+      <div class="primary-text-block mx-2 d-flex flex-row justify-content-between w100 gap-4">
+        <h2 class="project-title pt-3 fs-1">${cards.name}</h2>
+        <h2 class="project-title-desktop pt-3 fs-1">${cards.nameDesk}</h2>
+        <div class="d-flex aling-self-end btnpopup">
+          <button class="btn popup-close-btn aling-self-end pt-4" data-close-button><img src="./img/btncancelpopup.svg" alt=""></button>
         </div>
       </div> 
-      <div class="frame-2 d-flex flex-row gap-3 mx-2 mt-2">
-        <h6 class="client">${projectInfo.company}</h6>
-        <img src="img/Counter.png" class="counter py-3">
-        <p class= "client-role">${projectInfo.role}</p>
-        <img src="img/Counter.png" class="counter py-3">
-        <p class="client-year">${projectInfo.year}</p>
+      <div class="frame-2 d-flex flex-row mt-2">
+        <h6 class="client">${cards.company}</h6>
+        <img src=${cards.counter} class="counter">
+        <p class= "client-role">${cards.role}</p>
+        <img src=${cards.counter} class="counter">
+        <p class="client-year">${cards.year}</p>
     </div> 
       <div class="m-2">
-        <img src=${projectInfo.img} class="snapshoot w-100 px-0 mx-0">
+        <img src=${cards.image} class="snapshoot px-0 mx-0 mt-0">
       </div>
-      <div class="mx-2 pt-4">
-        <p class="mx-1">${projectInfo.description}</p>
-        <ul class="tags-block d-flex flex-row list-unstyled gap-2">
-          ${projectString}
-        </ul>
-        <div class="action">
-          <button type="button" class="btn normal-b btn-outline-primary"> See live <img src="./img/live.svg" alt=""></button>
-          <button type="button" class="btn normal-b btn-outline-primary"> See source <img src="./img/github.svg" alt=""></button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    `;
-
-  modalTemplateMobile.innerHTML = detailHtmlMobile;
-
-  // dynamic template for web
-  const detailHtmlWebModal = `
-  <div class="d-flex bg-black h-100 w-100">
-  <div class="d-flex flex-column justify-content-center m-5 pt-1 pb-4 px-3 row-gap-3 border rounded-3 border-primary" id="modal-heading-${projectInfo.id}">
-  <div class="primary-text-block mx-2 d-flex flex-row">
-    <h2 class="project-title pt-3 fs-1">${projectInfo.name}</h2>
-        <div class="w-25 aling-item-end">
-          <button class="btn btn-tags aling-self-end"><img src="./img/btncancelpopup.svg" alt=""></button>
-        </div>
-      </div> 
-      <div class="frame-2 d-flex flex-row gap-3 mx-2 mt-2">
-      <h6 class="client">${projectInfo.company}</h6>
-      <img src="img/Counter.png" class="counter py-3">
-      <p class= "client-role">${projectInfo.role}</p>
-      <img src="img/Counter.png" class="counter py-3">
-      <p class="client-year">${projectInfo.year}</p>
-    </div> 
-      <div class="m-2">
-        <img src="img/Snapshoot Portfolio.png" class="snapshoot w-100 px-0 mx-0">
-      </div>
-      <div class="mx-2 pt-4 d-flex flex-row gap-3">
-        <p class="mx-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
-        <div class=" d-flex flex-column">
-          <ul class="tags-block d-flex flex-row list-unstyled gap-2 my-0">
-            ${projectString}
+      <div class="mx-2 pt-4 part-two-pop">
+        <p class="mx-1 pop-up-desc">${cards.description}</p>
+        <div class="part-three-pop">
+          <ul class="tags-block d-flex flex-row list-unstyled gap-2">
+            <li class="list-item"><button type="button" class= "btn btn-tags"> ${cards.technologies.tech1}</button></li>
+            <li class="list-item"><button type="button" class= "btn btn-tags"> ${cards.technologies.tech2}</button></li>
+            <li class="list-item"><button type="button" class= " btn btn-tags"> ${cards.technologies.tech3}</button></li>
           </ul>
-          <ul class="tags-block d-flex flex-row list-unstyled gap-2 my-0">
-            <li class="list-item col"><button type="button" class= "btn btn-tags">GitHub</button></li>
-            <li class="list-item col"><button type="button" class= "btn btn-tags">Ruby</button></li>
-            <li class="list-item col"><button type="button" class= "btn btn-tags">Bootstrap</button></li>
-          </ul>
-          <div class="action d-flex gap-2 pl-2 w-100">
-            <button type="button" class="btn normal-b btn-outline-primary px-3"> See live <img src="./img/live.svg" alt=""></button>
-            <button type="button" class="btn normal-b btn-outline-primary px-3"> See source <img src="./img/github.svg" alt=""></button>
+          <div class="action">
+            <button type="button" class="btn normal-b btn-outline-primary"> See live <img src="./img/live.svg" alt=""></button>
+            <button type="button" class="btn normal-b btn-outline-primary"> See source <img src="./img/github.svg" alt=""></button>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  `;
-  modalTemplateWeb.innerHTML = detailHtmlWebModal;
+    `;
+    containerName.appendChild(card);
+  });
 };
+
+renderCards(projectInfo, firstCardContainer);
+
+const closePopupButtons = document.querySelectorAll('[data-close-button]');
+const openPopupButtons = document.querySelectorAll('[data-modal-target]');
+const overlay = document.getElementById('overlay');
+
+/* Open Popups Function */
+const openPopup = (modal) => {
+  if (modal == null) return;
+  modal.classList.add('active');
+  overlay.classList.add('active');
+};
+
+/* Close Popups Function */
+const closePopup = (modal) => {
+  if (modal == null) return;
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+};
+
+/* Opening Popups */
+openPopupButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const popup = document.querySelector(button.dataset.modalTarget);
+    openPopup(popup);
+  });
+});
+
+/* Closing Popups */
+closePopupButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const popup = button.closest('.popup');
+    closePopup(popup);
+  });
+});
+
+/* Closing the popup when clicking outside */
+
+overlay.addEventListener('click', () => {
+  const popups = document.querySelectorAll('.popup.active');
+  popups.forEach((modal) => {
+    closePopup(modal);
+  });
+});

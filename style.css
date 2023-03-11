@@ -375,6 +375,66 @@ body {
   color: #fff;
 }
 
+.popup {
+  position: fixed;
+  top: 3%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  background-color: #fff;
+  z-index: 10;
+  margin-bottom: 15px;
+  transform: scale(0);
+  transition: 0.2s ease-in-out;
+  overflow-x: hidden;
+  overflow-y: visible;
+  border-radius: 20px;
+  height: 93%;
+}
+
+.popup.active {
+  transform: scale(1);
+  height: 93%;
+}
+
+.pop-container-devp {
+  margin-bottom: 5%;
+}
+
+.btnpopup {
+  margin-right: 3%;
+  margin-top: -3%;
+}
+
+.popup-close-btn {
+  margin-left: 10%;
+  color: #67798e;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2.5em;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: #c1c7d0;
+  pointer-events: none;
+  height: 100%;
+}
+
+#overlay.active {
+  pointer-events: all;
+  backdrop-filter: blur(10px);
+  opacity: 80%;
+  height: 100%;
+}
+
 /* About-myself-section */
 
 .about-myself {
@@ -854,6 +914,26 @@ body {
     display: none;
   }
 
+  .popup.active {
+    height: fit-content;
+  }
+
+  .popup .snapshoot {
+    display: flex;
+    padding-left: 20%;
+  }
+
+  .popup .part-two-pop {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .popup .part-two-pop .part-three-pop {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
+
   .photo-one {
     display: flex;
     flex-direction: column;
@@ -879,7 +959,7 @@ body {
 
   .photo-three {
     display: inline;
-    background-image: url(img/Snapshoot\ Portfolio.png);
+    background-image: url(img/SnapshootPortfolio.png);
     margin: 12px;
     width: 50%;
     height: 15em;
@@ -988,6 +1068,12 @@ body {
   .action {
     margin-left: 24px;
     margin-bottom: 24px;
+  }
+
+  .popup .part-two-pop .part-three-pop .action {
+    display: flex;
+    width: 90%;
+    margin: 0;
   }
 
   .multipost-uno {
@@ -1335,6 +1421,27 @@ body {
 
   /* page-development section */
 
+  .popup.active {
+    height: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .pop-conteiner-devp {
+    height: fit-content;
+  }
+
+  .popup .part-two-pop {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .popup .part-two-pop .part-three-pop {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
+
   .page-development {
     display: flex;
     flex-direction: column;
@@ -1353,6 +1460,15 @@ body {
 
   .snapshoot {
     display: none;
+  }
+
+  .popup .snapshoot {
+    display: flex;
+    padding-left: 20%;
+    size: 80%;
+    width: 100%;
+    height: 400px;
+    margin-right: -10px;
   }
 
   .photo-one {
@@ -1380,7 +1496,7 @@ body {
 
   .photo-three {
     display: inline;
-    background-image: url(img/Snapshoot\ Portfolio.png);
+    background-image: url(img/SnapshootPortfolio.png);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 24px;
@@ -1414,6 +1530,10 @@ body {
     height: 96px;
     margin-left: 24px;
     margin-bottom: 10px;
+  }
+
+  .popup .primary-text-block {
+    width: 100%;
   }
 
   .project-title {
@@ -1494,6 +1614,12 @@ body {
     flex-direction: row-reverse;
     justify-content: space-between;
     width: 80%;
+  }
+
+  .popup .part-two-pop .part-three-pop .action {
+    display: flex;
+    width: 90%;
+    margin: 0;
   }
 
   .multipost-uno .left-block {
