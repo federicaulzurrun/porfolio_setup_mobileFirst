@@ -14,8 +14,6 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   containerMain.classList.remove('active');
 }));
 
-// projects info
-
 const projectInfo = [
   {
     id: 0,
