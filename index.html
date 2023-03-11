@@ -206,13 +206,15 @@
             <div class="contact-me-content">
                 <h2 class="Contact-me-title">Contact me</h2>
                 <p class="Contact-me-body">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it </p>
-                <form class="Contact-form" action="https://formspree.io/f/mgebklpe
-                " method="post">
+                <form id="form" class="Contact-form" action="https://formspree.io/f/mgebklpe" method="post">
+                    <label for="username"></label>
                     <input type="text" id="name" name="name" placeholder="Write your name here!" required maxlength="30" />
-                    <input type="email" id="email" name="email" placeholder="Write your e-mail here!" required />
+                    <label for="email"></label>
+                    <input type="text" id="email" name="email" placeholder="Write your e-mail here!" required />
                     <textarea name="user-massage" id="textarea" cols="30" rows="10" placeholder="Write something here" required maxlength="500"></textarea>
+                    <div id="error" class="error"></div>
                     <button type="submit" class="btn normal-b" id="contact-me-action"> Get in touch </button>
-                </form>
+                  </form>
             </div>
         </div>
     </div>

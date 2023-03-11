@@ -4,6 +4,8 @@
   padding: 0;
 }
 
+/* trying linters */
+
 body {
   margin: 0;
   padding: 0;
@@ -660,6 +662,16 @@ body {
   top: 5px;
   border: 1px #cfd8cf solid;
   border-radius: 8px;
+}
+
+#error {
+  width: 100%;
+  height: auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #ebebff;
 }
 
 #contact-me-action {
