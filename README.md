@@ -18,7 +18,7 @@
 
 
 
-# 📖 [Mi Porfolio] <a name="about-project"></a>
+# 📖 [My Porfolio] <a name="about-project"></a>
 
 
 **Porfolio** it's the beggining of the creation of my porfolio page. The main page it's almost completly done. The tample it's copied from figma. I selected the firts of the five Microverse gave us to choose.
@@ -103,6 +103,12 @@ Install this project linters: *do not change the any config file in any way*    
 - GitHub: [@federicaulzurrun](https://github.com/federicaulzurrun)
 - Twitter: [@ulzurrunfede](https://mobile.twitter.com/ulzurrunfede)
 - LinkedIn: [Federica Ulzurrun](https://www.linkedin.com/in/federica-ulzurrun-293a86198)
+
+
+👤 **Daniela Moreno**
+
+- GitHub: [@daniela](https://github.com/danielamoreno699)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/daniela-moreno-06a139124/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
