@@ -106,6 +106,12 @@ Install this project linters: *do not change the any config file in any way*    
 - Twitter: [@ulzurrunfede](https://mobile.twitter.com/ulzurrunfede)
 - LinkedIn: [Federica Ulzurrun](https://www.linkedin.com/in/federica-ulzurrun-293a86198)
 
+
+👤 **Daniela Moreno**
+
+- GitHub: [@daniela](https://github.com/danielamoreno699)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/daniela-moreno-06a139124/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 

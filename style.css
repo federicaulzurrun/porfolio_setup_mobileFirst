@@ -196,9 +196,11 @@ body {
 }
 
 .works {
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
   background-color: #fff;
-  width: 327px;
+  width: 100%;
   height: 552px;
   margin-top: 80px;
   border: 1px #dfe1e6;
@@ -231,14 +233,14 @@ body {
 
 .left-block {
   height: 288px;
-  width: 295px;
+  width: 90%;
   margin-left: 16px;
   display: flex;
   flex-direction: column;
 }
 
 .primary-text-block {
-  width: 295px;
+  width: 80%;
   height: 80px;
   margin-bottom: 10px;
 }
@@ -312,11 +314,12 @@ body {
 }
 
 .primary-text {
-  width: 295px;
+  width: 95%;
   height: 76px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   margin-left: 5px;
+  margin-bottom: 2%;
 }
 
 .multi {
@@ -330,6 +333,7 @@ body {
   gap: 10px;
   justify-content: flex-start;
   margin-right: 0;
+  margin-top: 5%;
 }
 
 .list-item {
@@ -375,6 +379,66 @@ body {
 .normal-b:active {
   background-color: #2230d2;
   color: #fff;
+}
+
+.popup {
+  position: fixed;
+  top: 3%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  background-color: #fff;
+  z-index: 10;
+  margin-bottom: 15px;
+  transform: scale(0);
+  transition: 0.2s ease-in-out;
+  overflow-x: hidden;
+  overflow-y: visible;
+  border-radius: 20px;
+  height: 98%;
+}
+
+.popup.active {
+  transform: scale(1);
+  height: 93%;
+}
+
+.pop-container-devp {
+  margin-bottom: 5%;
+}
+
+.btnpopup {
+  margin-right: 3%;
+  margin-top: -3%;
+}
+
+.popup-close-btn {
+  margin-left: 10%;
+  color: #67798e;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2.5em;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: #c1c7d0;
+  pointer-events: none;
+  height: 100%;
+}
+
+#overlay.active {
+  pointer-events: all;
+  backdrop-filter: blur(10px);
+  opacity: 80%;
+  height: auto;
 }
 
 /* About-myself-section */
@@ -848,7 +912,7 @@ body {
 
   .page-development {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -866,6 +930,28 @@ body {
     display: none;
   }
 
+  .popup.active {
+    height: fit-content;
+  }
+
+  .popup .snapshoot {
+    display: flex;
+    padding-left: 20%;
+    height: 350px;
+    width: 100%;
+  }
+
+  .popup .part-two-pop {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .popup .part-two-pop .part-three-pop {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
+
   .photo-one {
     display: flex;
     flex-direction: column;
@@ -875,7 +961,7 @@ body {
     margin: 24px;
     margin-top: 65px;
     width: 100%;
-    height: 348px;
+    height: 90%;
   }
 
   .photo-two {
@@ -884,17 +970,17 @@ body {
     margin: 24px;
     margin-top: 1px;
     width: 50%;
-    height: 300px;
+    height: 90%;
     background-repeat: no-repeat;
     background-size: 100%;
   }
 
   .photo-three {
     display: inline;
-    background-image: url(img/Snapshoot\ Portfolio.png);
+    background-image: url(img/SnapshootPortfolio.png);
     margin: 12px;
     width: 50%;
-    height: 15em;
+    height: 90%;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -905,7 +991,7 @@ body {
     margin: 24px;
     margin-top: 1px;
     width: 80%;
-    height: 300px;
+    height: 90%;
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -1000,6 +1086,12 @@ body {
   .action {
     margin-left: 24px;
     margin-bottom: 24px;
+  }
+
+  .popup .part-two-pop .part-three-pop .action {
+    display: flex;
+    width: 90%;
+    margin: 0;
   }
 
   .multipost-uno {
@@ -1347,6 +1439,27 @@ body {
 
   /* page-development section */
 
+  .popup.active {
+    height: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .pop-conteiner-devp {
+    height: fit-content;
+  }
+
+  .popup .part-two-pop {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .popup .part-two-pop .part-three-pop {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
+
   .page-development {
     display: flex;
     flex-direction: column;
@@ -1365,6 +1478,15 @@ body {
 
   .snapshoot {
     display: none;
+  }
+
+  .popup .snapshoot {
+    display: flex;
+    padding-left: 20%;
+    size: 80%;
+    width: 100%;
+    height: 400px;
+    margin-right: -10px;
   }
 
   .photo-one {
@@ -1392,7 +1514,7 @@ body {
 
   .photo-three {
     display: inline;
-    background-image: url(img/Snapshoot\ Portfolio.png);
+    background-image: url(img/SnapshootPortfolio.png);
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 24px;
@@ -1426,6 +1548,10 @@ body {
     height: 96px;
     margin-left: 24px;
     margin-bottom: 10px;
+  }
+
+  .popup .primary-text-block {
+    width: 100%;
   }
 
   .project-title {
@@ -1506,6 +1632,12 @@ body {
     flex-direction: row-reverse;
     justify-content: space-between;
     width: 80%;
+  }
+
+  .popup .part-two-pop .part-three-pop .action {
+    display: flex;
+    width: 90%;
+    margin: 0;
   }
 
   .multipost-uno .left-block {
