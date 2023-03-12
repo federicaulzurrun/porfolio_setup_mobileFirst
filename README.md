@@ -30,6 +30,8 @@
 First i use HTML 5 thas it's markup languange used for structuring and presenting content on the WWW. Then i used CSS 3 that is used for structuring and styling web pages, especially flexbox and grid too.
 
 
+### <a name="walkthrough" href= "https://www.loom.com/share/4f8856c359c5475ebfaa59a578711397">Project Walkthrough</a>
+
 ### Key Features <a name="key-features"></a>
 
 - **NavBar** : contains the logo of my profolio anda the hamburguer menu that in a future will allow my clients to look for specific sections of the page.
