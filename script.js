@@ -227,7 +227,7 @@ const renderCards = (projectInfo, containerName) => {
           <button class="btn popup-close-btn aling-self-end pt-4" data-close-button><img src="./img/btncancelpopup.svg" alt=""></button>
         </div>
       </div> 
-      <div class="frame-2 d-flex flex-row mt-2">
+      <div class="frame-2 d-flex flex-row mt-2 mb-0">
         <h6 class="client">${cards.company}</h6>
         <img src=${cards.counter} class="counter">
         <p class= "client-role">${cards.role}</p>

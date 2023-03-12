@@ -937,6 +937,8 @@ body {
   .popup .snapshoot {
     display: flex;
     padding-left: 20%;
+    height: 350px;
+    width: 100%;
   }
 
   .popup .part-two-pop {
@@ -959,7 +961,7 @@ body {
     margin: 24px;
     margin-top: 65px;
     width: 100%;
-    height: 348px;
+    height: 90%;
   }
 
   .photo-two {
@@ -968,7 +970,7 @@ body {
     margin: 24px;
     margin-top: 1px;
     width: 50%;
-    height: 300px;
+    height: 90%;
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -978,7 +980,7 @@ body {
     background-image: url(img/SnapshootPortfolio.png);
     margin: 12px;
     width: 50%;
-    height: 15em;
+    height: 90%;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -989,7 +991,7 @@ body {
     margin: 24px;
     margin-top: 1px;
     width: 80%;
-    height: 300px;
+    height: 90%;
     background-repeat: no-repeat;
     background-size: 100%;
   }
